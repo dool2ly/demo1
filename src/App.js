@@ -15,12 +15,12 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import Divider from '@material-ui/core/Divider'
 import List from '@material-ui/core/List'
 
+import logo from './images/CMLOGO_WHITE.png'
 import { mainItems, secondItems } from './components/MenuItems'
 import Home from './components/Home'
 import Codes from './components/Codes'
 import CodeAdd from './components/CodeAdd'
-import logo from './images/CMLOGO_WHITE.png'
-
+import ChartTest from './components/ChartTest'
 
 const drawerWidth = 240
 
@@ -175,6 +175,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/_code" component={Codes} />
               <Route path="/_codeAdd" component={CodeAdd} />
+              <Route path="/test" component={ChartTest} />
             </Switch>
           </main>
 

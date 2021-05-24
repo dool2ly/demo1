@@ -53,9 +53,13 @@ const columns = [
     field: 'code',
     headerName: 'Code',
     renderCell: (params) => (
-      <Button component={Link} to={`/_code/${params.getValue('seq')}`}>
+      // <Button component={Link} to={`/_code/${params.getValue('seq')}`}>
+      // <Button>
+      <Button component={Link} to={`/_code/${params.row.seq}`}>
         {/* {params.getValue('seq')} */}
         {params.value}
+        {/* {params.row.seq} */}
+        {/* {console.log(params)} */}
       </Button>
     )
   },
@@ -99,7 +103,7 @@ function CodeList() {
         id++
         return {...item.CodeTable, id}
       })
-      
+      console.log(fixData)
       setCodeList(fixData)
       setLoad(true)
     })
