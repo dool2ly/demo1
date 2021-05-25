@@ -21,6 +21,7 @@ import Home from './components/Home'
 import Codes from './components/Codes'
 import CodeAdd from './components/CodeAdd'
 import ChartTest from './components/ChartTest'
+import Report from './components/Report'
 
 const drawerWidth = 240
 
@@ -176,6 +177,7 @@ function App() {
               <Route path="/_code" component={Codes} />
               <Route path="/_codeAdd" component={CodeAdd} />
               <Route path="/test" component={ChartTest} />
+              <Route path="/report" component={Report} />
             </Switch>
           </main>
 

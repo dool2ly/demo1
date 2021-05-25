@@ -49,6 +49,12 @@ export const mainItems = (
       <ListItemText primary="Code Add" />
     </ListItem>
 
+    <ListItem button component={Link} to="/report">
+      <ListItemIcon>
+        <AssignmentIcon />
+      </ListItemIcon>
+      <ListItemText primary="Report" />
+    </ListItem>
     {/* warning 많음 <ListItemLink icon={<PeopleIcon />} primary="Code List" to="/list" /> */}
   </div>
 )

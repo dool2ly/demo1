@@ -1,0 +1,11 @@
+{
+    "id": 0,
+    "name": "주식회사 어디",
+    "damdang": "정누구그룹장님",
+    "phone": "01012345678",
+    "email": "hihi@hi.kr",
+    "payment": [
+        "cash",
+        "credit"
+    ]
+}

@@ -81,17 +81,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-function ChartTest() {
-  return (
-    <React.Fragment>
-      <main>
-        
-      </main>
-    </React.Fragment>
-  )
-}
-
-export default ChartTest
 
 class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
@@ -122,3 +111,25 @@ class Example extends PureComponent {
     );
   }
 }
+const data2 = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400},
+              {name: 'Page B', uv: 150, pv: 2400, amt: 2400},
+              {name: 'Page C', uv: 300, pv: 2400, amt: 2400},]
+
+function ChartTest() {
+  const classes = useStyles()
+  return (
+    <main className={classes.layout}>
+      <Paper className={classes.paper}>
+        <LineChart width={500} height={300} data={data2}>
+          <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+          <CartesianGrid stroke="#ccc" />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </Paper>
+    </main>
+  )
+}
+
+export default ChartTest
+// export default Example

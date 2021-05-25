@@ -1,0 +1,35 @@
+{
+    "cloud_services": [
+        {
+            "supplier": "Microsoft",
+            "service": "Azure",
+            "service_name": "EC2다",
+            "qty": 12,
+            "unit_price": 500000
+        },
+        {
+            "supplier": "AWS",
+            "service": "M365",
+            "service_name": "E5 Plan",
+            "qty": 12,
+            "unit_price": 2000000
+        }
+    ],
+    "additional_services": [
+        {
+            "supplier": "Cloudmate",
+            "service": "시스템 현황 분석 및 기능 설정",
+            "service_name": "시스템~~정의",
+            "qty": 0.2,
+            "unit_price": 1000000
+        },
+        {
+            "supplier": "Cloudmate",
+            "service": "운영",
+            "service_name": "운영",
+            "qty": 1,
+            "unit_price": 1000000
+        }
+    ]
+
+}
